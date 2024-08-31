@@ -1,0 +1,112 @@
+.container{
+    margin-top: 5%;
+}
+
+.contacto{
+    margin-bottom: 0rem;
+}
+
+.titulo{
+    background: black; 
+    padding: 1rem;
+}
+
+.disenadora{
+    color:white; 
+    margin-bottom: 0rem; 
+    font-size: 20px; 
+    margin-left: 1.5rem;
+}
+
+.grafica{
+    color:white; 
+    font-size: 20px; 
+    margin-left: 1.5rem;
+}
+
+.nombre{
+    margin-bottom: 0rem; 
+    font-size: 27px;
+}
+
+.apellido{
+    margin-bottom: 0rem; 
+    font-size: 35px;
+}
+
+.izquierda{
+    padding: 1rem;
+}
+
+.foto{
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+.descripcion{
+    margin-top: 1rem;
+}
+
+.info-descripcion{
+    font-size: 21px; 
+    margin-left: 1rem;
+}
+
+.titulos-exp{
+    font-size: 20px; 
+    border-bottom: solid; 
+    margin-left: 1.5rem
+}
+
+.trabajos{
+    margin-bottom: 1rem
+}
+
+.ano-trabajo{
+    font-size: 15px; 
+    margin-left: 1.5rem; 
+    margin-bottom: 0rem
+}
+
+.titulo-trabajo{
+    font-size: 21px; 
+    margin-left: 1.5rem; 
+    margin-bottom: 0rem
+}
+
+.titulo-cursos{
+    font-size: 21px; 
+    margin-left: 1.5rem; 
+    margin-bottom: 0rem
+}
+
+.skils{
+    margin-top: 2rem;
+}
+
+.nombre-empresa{
+    font-size: 20px; 
+    margin-left: 1.5rem; 
+    margin-bottom: 0rem
+}
+
+.nombre-facutad{
+    font-size: 18px; 
+    margin-left: 1.5rem; 
+    margin-bottom: 0rem
+}
+
+.titulo-idioma{
+    font-size: 25px; 
+    margin-left: 1.5rem; 
+    margin-bottom: 0rem
+}
+
+.progress{
+    margin-left: 1.5rem;
+}
+
+
+.footer{
+    height: 5rem;
+}

@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Mortend";
+    src: url("/fonts/Mortend-Bold.ttf");
+}
+
+body{
+    background: linear-gradient(to bottom right, #01050a,  97%, #040514);
+}
+
+p{
+    color: white;
+}
+
+.container{
+    margin-top: 5%;
+}
+
+.nombre{
+    margin-bottom: 0rem; 
+    font-size: 35px;
+}
+
+.apellido{
+    margin-bottom: 0rem; 
+    font-size: 55px;
+    font-family: "Mortend";
+    /* color: linear-gradient(to bottom right, #4953a2,  90%, #ce4f70); */
+    
+}
+
+.habilidades{
+    margin-top: 6rem;
+    width: 20rem;
+}
+
+.contacto{
+    margin-top: 6rem;
+    width: 20rem;
+}
+
+.titulo-contacto{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: white;
+}
+
+.descripcion{
+    color: #525357 !important;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.info-descripcion{
+    font-size: 17px; 
+    margin-right: 4rem;
+    color: #525357;
+}
+
+.titulo-autodescripcion{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: #283e8a;
+}
+
+.titulo-habilidades{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: white;
+}
+
+.titulos-exp{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: #775fa7;
+}
+
+.laboral{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: #ee4c62;
+}
+
+.formacion{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: #975da5;
+}
+
+.trabajos{
+    margin-left: 0rem;
+    border-left: solid;
+    border-width: 0.5rem;
+    border-color: white;
+}
+
+.descripcion-trabajo{
+    margin-bottom: 1.5rem
+}
+
+.Software{
+    font-size: 20px; 
+    margin-bottom: 1rem
+}
+
+.titulo-cursos{
+    
+    font-size: 21px; 
+    margin-bottom: 0rem
+}
+
+.skils{
+    margin-top: 2rem;
+}
+
+.nombre-empresa{
+    font-size: 20px;
+    margin-bottom: 0rem
+}
+
+.nombre-curso{
+    font-size: 20px;
+    margin-bottom: 0rem
+}
+
+.titulo-trabajo{
+    font-family: "Mortend";
+    font-size: 20px; 
+    margin-bottom: 0rem
+}
+
+.ano-trabajo{
+    font-family: "Mortend";
+    font-size: 11px; 
+    margin-bottom: 0rem
+}
+
+.ano-curso{
+    font-family: "Mortend";
+    font-size: 11px; 
+    margin-bottom: 2rem
+}
+
+.nombre-facutad{
+    font-size: 18px; 
+    margin-bottom: 2rem
+}
+
+.svg{
+    color: white !important;
+}
+
+.footer{
+    height: 5rem;
+}
