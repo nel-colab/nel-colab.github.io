@@ -24,6 +24,10 @@ p{
     margin-bottom: 0rem; 
     font-size: 55px;
     font-family: "Mortend";
+
+    background: linear-gradient(to right, #4953a2, #ce4f70);
+    -webkit-background-clip: text;
+    color: transparent;
     /* color: linear-gradient(to bottom right, #4953a2,  90%, #ce4f70); */
     
 }
