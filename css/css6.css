@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Mortend";
+    src: url("/fonts/Mortend-Bold.ttf");
+}
+
+body{
+    background: white;
+}
+
+p{
+    color: black;
+}
+
+.container{
+    margin-top: 5%;
+}
+
+.nombre{
+    border-bottom: 5rem;
+    font-size: 65px;
+}
+
+
+
+.habilidades{
+    margin-top: 6rem;
+    width: 20rem;
+}
+
+.contacto{
+    margin-top: 6rem;
+    width: 20rem;
+}
+
+.titulo-referencia{
+    font-family: "Mortend";
+    font-size: 20px;
+}
+
+.descripcion{
+    color: #525357 !important;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.info-descripcion{
+    font-size: 17px; 
+    margin-right: 4rem;
+    color: #525357;
+}
+
+.titulo-autodescripcion{
+    font-family: "Mortend";
+    font-size: 20px;
+    color: #283e8a;
+}
+
+.titulo-habilidades{
+    font-family: "Mortend";
+    font-size: 20px;
+}
+
+.sobre-mi{
+    margin-bottom: 2rem;
+   
+}
+.titulos-sobre-mi{
+    font-family: "Mortend";
+    font-size: 25px;
+}
+.descripcion-sobre-mi{
+    font-size: 20px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: rgb(132, 132, 132);
+}
+.laboral{
+    font-family: "Mortend";
+    font-size: 20px;
+}
+
+.formacion{
+    margin-top: 3rem;
+    font-family: "Mortend";
+    font-size: 20px;
+}
+
+.Intitutos{
+    margin-left: 0rem;
+}
+
+.descripcion-trabajo{
+    margin-bottom: 1.5rem
+}
+
+.Software{
+    font-size: 20px; 
+    margin-bottom: 1rem
+}
+
+.titulo-cursos{
+    
+    font-size: 21px; 
+    margin-bottom: 0rem
+}
+
+
+
+.nombre-empresa{
+    font-size: 20px;
+    margin-bottom: 0rem;
+    
+}
+
+.nombre-curso{
+    font-size: 20px;
+    margin-bottom: 0rem
+}
+
+.titulo-trabajo{
+    font-family: "Mortend";
+    font-size: 20px; 
+    margin-bottom: 0rem
+}
+
+.ano-trabajo{
+    font-family: "Mortend";
+    font-size: 11px; 
+    margin-bottom: 0rem
+}
+
+.ano-curso{
+    font-family: "Mortend";
+    font-size: 11px; 
+    margin-bottom: 2rem
+}
+
+.nombre-facutad{
+    font-size: 18px; 
+    margin-bottom: 2rem
+}
+
+.svg{
+    color: white !important;
+}
+
+.footer{
+    height: 5rem;
+}
