@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Esta línea importa la fuente "Dosis" -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  
+  <title>I Love You Dalida</title>
+
+  <!-- Todo el CSS está dentro de esta etiqueta <style> -->
+  <style>
+    body {
+      background: #000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin: 0;
+      cursor: pointer;
+      position: relative; /* Agregado */
+    }
+
+    /* Contenedor para el corazón animado */
+    .animated-heart-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      animation: floatHeart 10s infinite alternate ease-in-out;
+      pointer-events: none; 
+    }
+
+    /* El corazón principal */
+    .heart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      background-color: #ea80b0;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(234, 128, 176, 0.7);
+    }
+
+    /* Los bultos del corazón */
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-color: #ea80b0;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -75px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 75px;
+      top: 0;
+    }
+
+    /* Texto dentro del corazón */
+    .heart-text {
+      position: absolute;
+      color: #fff;
+      font-family: "Dosis", sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #fff;
+      transform: rotate(45deg);
+      z-index: 1;
+      white-space: nowrap;
+    }
+
+    /* Animación del corazón principal */
+    @keyframes floatHeart {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(50px, -30px);
+      }
+      50% {
+        transform: translate(0, 50px);
+      }
+      75% {
+        transform: translate(-50px, -30px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    /* --- NUEVO CSS PARA EL JAVASCRIPT --- */
+
+    /* Estilo para los mini-corazones creados al hacer click */
+    .mini-heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ea80b0;
+      transform: rotate(-45deg);
+      animation: floatUp 2s ease-out forwards;
+      pointer-events: none;
+      box-shadow: 0 0 10px rgba(234, 128, 176, 0.7);
+    }
+
+    /* Los bultos para el mini-corazón */
+    .mini-heart::before,
+    .mini-heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ea80b0;
+      border-radius: 50%;
+    }
+
+    .mini-heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .mini-heart::after {
+      left: 10px;
+      top: 0;
+    }
+
+    /* Animación de los mini-corazones */
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(-45deg) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150px) rotate(-45deg) scale(0.6);
+        opacity: 0;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <!-- Corazón principal -->
+  <div class="animated-heart-container">
+    <div class="heart">
+      <span class="heart-text">I Love You Dalida</span>
+    </div>
+  </div>
+
+  <!-- Enlace al archivo JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
