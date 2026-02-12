@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>I love you mi life! ❤️</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/heart-suit.png">
+    <style>
+        html, body {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffebf0;
+            font-family: sans-serif;
+        }
+
+        #main-gif {
+            width: 60%;
+            max-width: 200px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 12px;
+            font-weight: bold;
+            touch-action: manipulation;
+            cursor: pointer;
+        }
+
+        #yesBtn {
+            background-color: #ff4d6d;
+            color: white;
+            transition: transform 0.2s ease;
+            z-index: 5;
+        }
+
+        #noBtn {
+            background-color: #888;
+            color: white;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="main-gif" src="https://media.tenor.com/yuT20LqMkAwAAAAj/tkthao219-bubududu.gif">
+
+    <h1>Do you love me? ❤️</h1>
+
+    <div class="btn-container">
+        <button id="yesBtn" onclick="win()">YES!</button>
+        <button id="noBtn" onmouseover="move(this)" ontouchstart="move(this)">No</button>
+    </div>
+
+    <script>
+        let scale = 1;
+
+        function move(btn) {
+            const yesBtn = document.getElementById('yesBtn');
+            const rect = yesBtn.getBoundingClientRect();
+            
+            let x, y;
+            let isOverlapping = true;
+
+            // Løkke som kjører helt til vi finner en plass som ikke overlapper
+            while (isOverlapping) {
+                x = Math.random() * (window.innerWidth - btn.offsetWidth - 40) + 20;
+                y = Math.random() * (window.innerHeight - btn.offsetHeight - 40) + 20;
+
+                // Sjekk om den nye posisjonen (x, y) er inne i "Ja"-knappens område
+                const buffer = 50; // Ekstra sikkerhetsavstand i piksler
+                const overlapsX = x + btn.offsetWidth > rect.left - buffer && x < rect.right + buffer;
+                const overlapsY = y + btn.offsetHeight > rect.top - buffer && y < rect.bottom + buffer;
+
+                if (!(overlapsX && overlapsY)) {
+                    isOverlapping = false;
+                }
+            }
+            
+            btn.style.position = 'fixed';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+
+            // Gjør JA-knappen større
+            scale += 0.2;
+            yesBtn.style.transform = `scale(${scale})`;
+        }
+
+        function win() {
+            document.body.innerHTML = `
+                <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; width:100vw; background:#ffebf0; text-align:center;">
+                    <h1 style="font-size: 2.5rem; color:#ff4d6d;">I knew it😍!</h1>
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTVrcGFjZHY2cWxoZTQ4NHpsZXpydmptdWRxb2swbGcyZWZibXE3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9d3LQ6TdV2Flo8ODTU/giphy.gif" width="250">
+                    <p style="margin-top:20px; font-weight:bold; color:#d63384;">I love u too🥰😘!</p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
